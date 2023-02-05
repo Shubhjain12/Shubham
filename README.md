@@ -3,8 +3,6 @@ Description
 
 This is a Django based implementation of Rest frame work 
 
-Please check working demo  <a href="/readme_assets/elevator_API_demo.mp4">video here</a> and screenshots in <a href="/readme_assets">readme_assets</a> folder
-
 Redis Installation:
 
  Install Redis on Windows 10:
@@ -106,26 +104,23 @@ Example payload to put elevator in maintainance and in normal mode (action suppo
 
 Running on local machine
 ---------------------
-1. Clone this project<br>
-  ```
-  git clone https://github.com/avina5hkr/Elevator_API_with_django.git
-  ```  
-2. Install the python dependencies
+ 
+1. Install the python dependencies
   ```python
   pip install -r requirements.txt
   ```
-3. run migrations to add tables to db
+2. run migrations to add tables to db
   ```python
   python manage.py migrate
   ```
-4. Run the development server
+3. Run the development server
   ```python
   python manage.py runserver  ```
-5. create a superuser for the admin page
+4. create a superuser for the admin page
 ```python
    python manage.py createsuperuser
 ```
-6. Go to django admin page and add values ``"idle"`` and ``"moving"`` in ElevatorStatus table  
+5. Go to django admin page and add values ``"idle"`` and ``"moving"`` in ElevatorStatus table  
 ```
 http://127.0.0.1:8000/admin/elevator/elevatorstatus/
 ```  
