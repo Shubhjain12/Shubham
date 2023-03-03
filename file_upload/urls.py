@@ -1,4 +1,4 @@
-"""core URL Configuration
+"""file_upload URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.1/topics/http/urls/
@@ -15,9 +15,8 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from django.urls import include
+from django.urls import include, path
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('elevator/', include('elevator.urls')),
+    path('', include("fileuploadapp.urls")),
 ]

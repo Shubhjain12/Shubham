@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>File Upload</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="/static/file_upload/css/loginCdn.css">
+<link rel="stylesheet" href="/static/file_upload/css/styleLogin.css">
+</head>
+<body>
+<div class="image"></div>
+<div class="sign-in">
+  <h1>Log In</h1>
+  <form id="login" method="post"> 
+    {% csrf_token %}
+   
+    <input type="text" placeholder="Username" name="username" id="username" >
+    <input type="password" placeholder="Password" name="password" id="password">
+    <input type="submit" value="Log In" >
+    {% if msg %} 
+				<p id="message" class="error text-danger text-center" style="font-size: 20px;">{{ msg }}</p>
+		{% endif %}
+  </form>
+</body>
+</html>
