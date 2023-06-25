@@ -1,0 +1,17 @@
+logs/
+/main.py
+/connection_master.py
+__pycache__/
+/notif_upload_test.ipynb
+/uw_upload_test.ipynb
+/pd_test.ipynb
+/uw_upload_test_latest.ipynb
+/NOTI TEST.ipynb
+/dfvaliditycheck_old.py
+/pmfby_discarded.py
+/pmfby2.py
+/endorsement.ipynb
+/endorsementFile.ipynb
+/report.ipynb
+/end.ipynb
+/bsbNotification.ipynb
